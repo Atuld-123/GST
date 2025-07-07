@@ -1,4 +1,3 @@
-/* General Styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -48,7 +47,6 @@ h2 {
   color: #007bff;
 }
 
-/* Contact Form Styling */
 form {
   display: flex;
   flex-direction: column;
@@ -73,7 +71,6 @@ form button {
   cursor: pointer;
 }
 
-/* Services List */
 #services ul {
   list-style-type: none;
   padding-left: 0;
@@ -84,7 +81,6 @@ form button {
   font-size: 16px;
 }
 
-/* WhatsApp Button */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
