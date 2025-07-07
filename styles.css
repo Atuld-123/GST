@@ -1,0 +1,44 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+.hero {
+    background: url('https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0') no-repeat center center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.quote-btn {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
