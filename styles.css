@@ -1,45 +1,93 @@
-
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
+
 header {
-    background: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
 nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: black;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
+
 .hero {
-    background: url('https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0') no-repeat center center;
-    background-size: cover;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+  background: url('https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
 }
-.quote-btn {
-    padding: 10px 20px;
-    background: black;
-    color: white;
-    text-decoration: none;
-    margin-top: 20px;
-    display: inline-block;
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
 }
+
+h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Contact Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Services List */
+#services ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#services li {
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+/* WhatsApp Button */
 .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-}
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 }
