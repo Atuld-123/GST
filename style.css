@@ -1,0 +1,124 @@
+/* Reset and global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #28a745;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: -1;
+}
+
+section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Background images */
+#home {
+  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Home.jpg');
+}
+#about {
+  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Welcome.jpg');
+}
+#services {
+  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/service.jpg');
+}
+#contact {
+  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Contact.jpg');
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input, textarea, button {
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  section {
+    padding: 40px 15px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
