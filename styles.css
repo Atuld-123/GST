@@ -27,11 +27,10 @@ section {
 
 /* Section backgrounds */
 #home {
-  background-image: url('https://github.com/Atuld-123/GST/blob/main/Home.jpg');
+  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Home.jpg');
 }
-
 #about {
-  background-image: url('https://github.com/Atuld-123/GST/blob/main/Welcome.jpg');
+  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Welcome.jpg');
 }
 
 #services {
