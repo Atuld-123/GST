@@ -1,4 +1,4 @@
-/* Reset and global styles */
+huu/* Reset and global styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -60,7 +60,7 @@ section > * {
   background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Welcome.jpg');
 }
 #services {
-  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/service.jpg');
+  background-image: url('https://github.com/Atuld-123/GST/blob/main/service.jpg');
 }
 #contact {
   background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Contact.jpg');
