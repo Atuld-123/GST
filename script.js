@@ -10,8 +10,6 @@ function submitForm(event) {
     message: formData.get("message")
   };
 
-  alert("Thank you for contacting us, " + data.name + "!");
-
-  // OPTIONAL: You can integrate Google Sheets or Email later here.
+  alert("Thank you for contacting us, " + data.name + "! We will get back to you shortly.");
   form.reset();
 }
