@@ -1,0 +1,68 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 60px 20px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Section backgrounds */
+#home {
+  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/home-bg.jpg');
+}
+
+#about {
+  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/about-bg.jpg');
+}
+
+#services {
+  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/services-bg.jpg');
+}
+
+#contact {
+  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/contact-bg.jpg');
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, button {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  text-align: center;
+}
