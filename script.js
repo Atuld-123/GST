@@ -1,10 +1,17 @@
-const form = document.querySelector("form");
-const message = document.getElementById("form-msg");
+function submitForm(event) {
+  event.preventDefault();
 
-form.addEventListener("submit", (e) => {
-  message.textContent = "Sending...";
-  setTimeout(() => {
-    message.textContent = "Thank you! We will contact you soon.";
-    form.reset();
-  }, 1000);
-});
+  const form = document.getElementById("visitorForm");
+  const formData = new FormData(form);
+  const data = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    phone: formData.get("phone"),
+    message: formData.get("message")
+  };
+
+  alert("Thank you for contacting us, " + data.name + "!");
+
+  // OPTIONAL: You can integrate Google Sheets or Email later here.
+  form.reset();
+}
