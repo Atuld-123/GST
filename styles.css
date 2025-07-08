@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -23,12 +22,30 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
 }
 
-/* Section backgrounds */
+section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: -1;
+}
+
+section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section-specific backgrounds */
 #home {
   background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Home.jpg');
 }
+
 #about {
   background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Welcome.jpg');
 }
@@ -64,23 +81,4 @@ footer {
   background: rgba(0, 0, 0, 0.7);
   padding: 1rem;
   text-align: center;
-}
-section {
-  position: relative;
-  z-index: 0;
-}
-
-section::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-  z-index: -1;
-}
-
-section > * {
-  position: relative;
-  z-index: 1;
 }
