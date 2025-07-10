@@ -1,91 +1,53 @@
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
 header {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 1rem;
-  text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    text-align: center;
 }
 
 nav a {
-  margin: 0 10px;
-  color: #fff;
-  text-decoration: none;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.moving-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: moveText 10s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+@keyframes moveText {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
 }
 
 section {
-  padding: 60px 20px;
-  color: white;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 0;
-}
-
-section::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: -1;
-}
-
-section > * {
-  position: relative;
-  z-index: 1;
+    padding: 60px 20px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #home {
-  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Home.jpg');
-}
-
-#about {
-  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Welcome.jpg');
-}
-
-#services {
-  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/service.jpg');
-}
-
-#contact {
-  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Contact.jpg');
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-}
-
-input, textarea, button {
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  color: black;
-}
-
-button {
-  background-color: #28a745;
-  color: white;
-  cursor: pointer;
+    background-image: url('header-image.png');
 }
 
 footer {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 1rem;
-  text-align: center;
-}
-
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 100;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    text-align: center;
 }
