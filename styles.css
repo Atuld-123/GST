@@ -11,14 +11,25 @@ header {
   text-align: center;
 }
 
+nav {
+  margin-top: 10px;
+}
+
 nav a {
-  margin: 0 10px;
+  display: inline-block;
+  margin: 5px 10px;
   color: #fff;
   text-decoration: none;
 }
 
+.logo {
+  max-width: 120px;
+  margin: 10px auto;
+  display: block;
+}
+
 .moving-text {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   -webkit-background-clip: text;
@@ -60,17 +71,14 @@ section > * {
 }
 
 #home {
-  background-image: url('header-image.png');
+  background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Home.jpg');
 }
-
 #about {
   background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Welcome.jpg');
 }
-
 #services {
   background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/service.jpg');
 }
-
 #contact {
   background-image: url('https://raw.githubusercontent.com/Atuld-123/GST/main/Contact.jpg');
 }
@@ -79,11 +87,12 @@ form {
   display: flex;
   flex-direction: column;
   max-width: 500px;
+  width: 100%;
 }
 
 input, textarea, button {
-  margin: 5px 0;
-  padding: 10px;
+  margin: 8px 0;
+  padding: 12px;
   border-radius: 5px;
   border: none;
   color: black;
@@ -106,4 +115,21 @@ footer {
   bottom: 20px;
   right: 20px;
   z-index: 100;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .moving-text {
+    font-size: 1em;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  form {
+    max-width: 100%;
+  }
+  section {
+    padding: 40px 15px;
+  }
 }
