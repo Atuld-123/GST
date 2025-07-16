@@ -164,3 +164,25 @@ footer {
 .email-link:hover {
   color: #fff;
 }
+/* Hover Effects for Reviews & Team */
+.review-card, .team-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.team-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 20px rgba(255, 215, 53, 0.5);
+}
+
+.team-card img {
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover img {
+  transform: scale(1.1);
+}
