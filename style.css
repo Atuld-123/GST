@@ -1,0 +1,22 @@
+
+body { margin:0; font-family:Arial,sans-serif; color:white; }
+.sticky-header { position:sticky; top:0; background:rgba(0,0,0,0.7); display:flex; justify-content:space-between; align-items:center; padding:10px; }
+.logo{height:100px;}
+nav a{margin:0 10px;color:white;text-decoration:none;font-weight:bold;}
+.call-now { color:white; background:#28a745; padding:8px 12px; border-radius:6px; text-decoration:none; font-weight:bold; margin-right:10px;}
+.call-now:hover { background:#218838;}
+.menu-toggle {display:none;font-size:28px;color:white;cursor:pointer;}
+.bg-section{padding:50px;background:rgba(0,0,0,0.5);margin:10px 0;}
+.services-container{display:flex;gap:20px;flex-wrap:wrap;}
+.service-column{background:rgba(255,255,255,0.1);padding:15px;border-radius:8px;}
+.info-section{background:rgba(255,255,255,0.1);margin:20px 0;padding:15px;border-radius:8px;}
+.team-container{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
+.team-card{background:rgba(255,255,255,0.1);padding:15px;border-radius:8px;text-align:center;}
+.email-link{color:yellow;text-decoration:none;font-weight:bold;}
+.carousel{display:flex;justify-content:center;overflow:hidden;}
+.review-card{min-width:100%;opacity:0;transition:opacity 1s;text-align:center;}
+.review-card.active{opacity:1;}
+.whatsapp-float{position:fixed;bottom:80px;right:20px;}
+.whatsapp-float img{width:50px;height:50px;border-radius:50%;}
+#back-to-top{position:fixed;bottom:20px;right:20px;padding:10px;border-radius:50%;background:yellow;display:none;}
+@media(max-width:768px){nav{display:none;flex-direction:column;}nav.active{display:flex;}.menu-toggle{display:block;}.call-now{display:block;margin:10px auto;}}
