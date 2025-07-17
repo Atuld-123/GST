@@ -1,35 +1,31 @@
-// Toggle Menu for Mobile
+// Menu toggle
 function toggleMenu() {
-  const nav = document.getElementById("nav-menu");
-  nav.classList.toggle("active");
+  document.getElementById('nav-menu').classList.toggle('active');
 }
 
-// Back to Top Button
-const backToTopBtn = document.getElementById("back-to-top");
-window.onscroll = () => {
-  if (window.scrollY > 200) {
-    backToTopBtn.style.display = "block";
-  } else {
-    backToTopBtn.style.display = "none";
-  }
-};
+// Back to top
+const topBtn = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+  topBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-backToTopBtn.onclick = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
-
-// Simple Reviews Carousel
-let currentReview = 0;
-const reviews = document.querySelectorAll(".review-card");
-
-function showReview(index) {
-  reviews.forEach((review, i) => {
-    review.classList.remove("active");
-    if (i === index) review.classList.add("active");
-  });
-}
-
+// Review Carousel
+let currentSlide = 0;
+const slides = document.querySelectorAll('.review-card');
 setInterval(() => {
-  currentReview = (currentReview + 1) % reviews.length;
-  showReview(currentReview);
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
 }, 3000);
+
+// Scroll animation for fade-in
+const faders = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+  faders.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      el.classList.add('show');
+    }
+  });
+});
