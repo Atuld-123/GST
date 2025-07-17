@@ -1,15 +1,20 @@
-
 body { margin:0; font-family:Arial,sans-serif; color:white; }
-.sticky-header { position:sticky; top:0; background:rgba(0,0,0,0.7); display:flex; justify-content:space-between; align-items:center; padding:10px; }
-.logo{height:100px;}
+.sticky-header { position:sticky; top:0; background:rgba(0,0,0,0.8); display:flex; justify-content:space-between; align-items:center; padding:10px; z-index:999; }
+.logo{height:90px;}
 nav a{margin:0 10px;color:white;text-decoration:none;font-weight:bold;}
-.call-now { color:white; background:#28a745; padding:8px 12px; border-radius:6px; text-decoration:none; font-weight:bold; margin-right:10px;}
-.call-now:hover { background:#218838;}
+.call-now { color:white; background:#28a745; padding:8px 12px; border-radius:6px; text-decoration:none; font-weight:bold; animation:glow 1.5s infinite; }
+@keyframes glow { 0% { box-shadow:0 0 10px #28a745; } 50% { box-shadow:0 0 20px #28a745; } 100% { box-shadow:0 0 10px #28a745; } }
 .menu-toggle {display:none;font-size:28px;color:white;cursor:pointer;}
-.bg-section{padding:50px;background:rgba(0,0,0,0.5);margin:10px 0;}
+.bg-section{padding:50px;background-size:cover;background-position:center;position:relative;}
+.bg-section::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:0;}
+.bg-section>*{position:relative;z-index:1;}
+.home-bg{background-image:url('https://github.com/Atuld-123/GST/blob/main/Home.jpg?raw=true');}
+.about-bg{background-image:url('https://github.com/Atuld-123/GST/blob/main/Welcome.jpg?raw=true');}
+.services-bg{background-image:url('https://github.com/Atuld-123/GST/blob/main/service.jpg?raw=true');}
+.contact-bg{background-image:url('https://github.com/Atuld-123/GST/blob/main/Contact.jpg?raw=true');}
 .services-container{display:flex;gap:20px;flex-wrap:wrap;}
-.service-column{background:rgba(255,255,255,0.1);padding:15px;border-radius:8px;}
-.info-section{background:rgba(255,255,255,0.1);margin:20px 0;padding:15px;border-radius:8px;}
+.service-column{background:rgba(255,255,255,0.1);padding:15px;border-radius:8px;flex:1;min-width:250px;}
+.review-box,.team-container{background:rgba(255,255,255,0.1);padding:15px;border-radius:8px;}
 .team-container{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
 .team-card{background:rgba(255,255,255,0.1);padding:15px;border-radius:8px;text-align:center;}
 .email-link{color:yellow;text-decoration:none;font-weight:bold;}
