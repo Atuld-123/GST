@@ -69,6 +69,14 @@ nav a { margin:0 10px; color:white; text-decoration:none; font-weight:bold; }
 .team-card:hover { transform:scale(1.05); }
 .email-link { display:block; margin-top:10px; color:yellow; text-decoration:none; }
 
+/* Founder Image Style */
+.founder-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Keeps image proportion without distortion */
+  border: 3px solid #28a745; /* Green border for branding */
+}
 /* CONTACT FORM */
 form {
   display:flex; flex-direction:column; align-items:center; max-width:400px; margin:auto; gap:10px;
