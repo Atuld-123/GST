@@ -23,6 +23,12 @@ ul { list-style:none; padding:0; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+@keyframes headerGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 .header-container { display:flex; align-items:center; width:100%; justify-content:space-between; }
 .logo { height:80px; }
 nav a { margin:0 10px; color:white; text-decoration:none; font-weight:bold; }
