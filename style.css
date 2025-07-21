@@ -5,8 +5,16 @@ ul { list-style:none; padding:0; }
 
 /* HEADER */
 .sticky-header {
-  position:sticky; top:0; z-index:999;
-  background:rgba(0,0,0,0.8); display:flex; justify-content:space-between; align-items:center; padding:10px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: linear-gradient(90deg, #1a1a1a, #333333, #1a1a1a); /* Stylish gradient */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
 }
 .header-container { display:flex; align-items:center; width:100%; justify-content:space-between; }
 .logo { height:80px; }
