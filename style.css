@@ -8,14 +8,21 @@ ul { list-style:none; padding:0; }
   position: sticky;
   top: 0;
   z-index: 999;
-  background: linear-gradient(90deg, #1a1a1a, #333333, #1a1a1a); /* Stylish gradient */
+  background: linear-gradient(270deg, #1a1a1a, #333333, #1a1a1a);
+  background-size: 400% 400%;
+  animation: headerGradient 8s ease infinite;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+@keyframes headerGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 .header-container { display:flex; align-items:center; width:100%; justify-content:space-between; }
 .logo { height:80px; }
 nav a { margin:0 10px; color:white; text-decoration:none; font-weight:bold; }
