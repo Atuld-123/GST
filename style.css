@@ -24,11 +24,6 @@ ul { list-style:none; padding:0; }
   100% { background-position: 0% 50%; }
 }
 
-@keyframes headerGradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
 .header-container { display:flex; align-items:center; width:100%; justify-content:space-between; }
 .logo { height:80px; }
 nav a { margin:0 10px; color:white; text-decoration:none; font-weight:bold; }
@@ -98,6 +93,7 @@ nav a { margin:0 10px; color:white; text-decoration:none; font-weight:bold; }
   object-fit: cover; /* Keeps image proportion without distortion */
   border: 3px solid #28a745; /* Green border for branding */
 }
+
 /* CONTACT FORM */
 form {
   display:flex; flex-direction:column; align-items:center; max-width:400px; margin:auto; gap:10px;
@@ -120,6 +116,33 @@ button { background:#28a745; color:white; cursor:pointer; font-weight:bold; }
 /* FADE-IN ANIMATION */
 .fade-in { opacity:0; transform:translateY(30px); transition:opacity 1.2s ease, transform 1.2s ease; }
 .fade-in.show { opacity:1; transform:translateY(0); }
+
+/* NEWS FEED STYLES */
+.news-container {
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.news-item h4 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+.news-item p {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+.news-item a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 /* RESPONSIVE */
 @media(max-width:768px) {
