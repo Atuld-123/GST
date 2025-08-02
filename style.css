@@ -151,3 +151,42 @@ button { background:#28a745; color:white; cursor:pointer; font-weight:bold; }
   .menu-toggle { display:block; }
   .call-now { display:block; margin:10px auto; }
 }
+/* CONTACT SECTION - Animated Style */
+#contact.fade-in {
+  animation: slideUp 1.2s ease forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+form input,
+form textarea {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  transition: transform 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  transform: scale(1.02);
+}
+
+form button:hover {
+  background-color: #218838;
+}
