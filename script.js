@@ -57,3 +57,17 @@ async function fetchNews() {
 
 // Load news on page load
 window.addEventListener('load', fetchNews);
+function redirectToWhatsApp(event) {
+  event.preventDefault(); // Prevent actual form submission
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  const phoneNumber = "919005291257"; // Chandan Dubey's WhatsApp number
+  const fullMessage = `Hello, my name is ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURI(fullMessage)}`;
+
+  window.open(whatsappURL, "_blank");
+}
